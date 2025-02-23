@@ -8,13 +8,13 @@ services:
     envVars:
 
       - key: DATABASE_URL
-        value: postgresql://calcom:6rVrN2Zspe8L@dpg-cs81c9lds78s73916aj0-a.frankfurt-postgres.render.com/calcom
+        value: url
 
       - key: CALENDSO_ENCRYPTION_KEY
-        value: Yh6IWmEgP7cZp3Rxca7F1SnciT4ljihuuPFMtTZVse8=
+        value: secret
 
       - key: NEXTAUTH_SECRET
-        value: jqKMlj8uYTa6GmYe500FI1mcNZcueantFgf52GBVE64=
+        value: secret
 
       - key: CRON_API_KEY
         value: 0cc0e6c35519bba620c9360cfe3e68d0
