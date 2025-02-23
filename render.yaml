@@ -8,19 +8,13 @@ services:
     envVars:
 
       - key: DATABASE_URL
-        fromDatabase:
-          name: cal-postgres
-          property: connectionString
+        value: postgresql://calcom:6rVrN2Zspe8L@dpg-cs81c9lds78s73916aj0-a.frankfurt-postgres.render.com/calcom
 
       - key: CALENDSO_ENCRYPTION_KEY
-        value: secret
+        value: Yh6IWmEgP7cZp3Rxca7F1SnciT4ljihuuPFMtTZVse8=
 
       - key: NEXTAUTH_SECRET
-        value: secret
+        value: jqKMlj8uYTa6GmYe500FI1mcNZcueantFgf52GBVE64=
 
       - key: CRON_API_KEY
         value: 0cc0e6c35519bba620c9360cfe3e68d0
-
-databases:
-  - name: cal-postgres
-    plan: starter
