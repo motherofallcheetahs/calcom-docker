@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: cal-web
+    name: calcom
     plan: standard
     region: frankfurt
     repo: https://github.com/calcom/docker.git
