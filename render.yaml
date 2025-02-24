@@ -2,6 +2,7 @@ services:
   - type: web
     name: cal-web
     plan: standard
+    region: frankfurt
     repo: https://github.com/calcom/docker.git
     dockerfilePath: ./Dockerfile.render
     env: docker
